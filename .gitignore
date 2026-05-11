@@ -1,0 +1,4 @@
+*.geojson
+*.pth
+*.gpkg
+.DS_Store

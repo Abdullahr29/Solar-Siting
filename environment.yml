@@ -1,0 +1,40 @@
+name: solar-siting-ml
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python & Environment
+  - python=3.11
+  - jupyterlab
+  - ipywidgets
+  
+  # Vector Data Handling (For your .gpkg)
+  - geopandas
+  - shapely
+  - pyproj
+
+  # Raster Data Handling (For your Sentinel-2 images)
+  - rasterio
+  - xarray
+  - rioxarray
+  - numpy
+  
+  # Image Fetching & APIs (Modern STAC & Earth Engine)
+  - pystac-client       # Essential for modern, fast satellite data querying
+  - planetary-computer  # Microsoft's planetary computer (great Sentinel-2 archive)
+  - odc-stac            # Easily convert STAC queries into xarray datasets
+  - earthengine-api     # Google Earth Engine (alternative fetching method)
+  - geemap              # Great for visualizing Earth Engine data in Jupyter
+
+  # Machine Learning & Vision (Future-proofing)
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - torchaudio
+  
+  # Utilities & Visualization
+  - matplotlib
+  - tqdm                # Progress bars (crucial for long download loops)
+  - python-dotenv       # For securely loading API keys
+  - requests

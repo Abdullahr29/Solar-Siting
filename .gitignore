@@ -30,3 +30,6 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 ._*
+
+# README assets (keep)
+!docs/*.png

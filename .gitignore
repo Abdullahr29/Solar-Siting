@@ -1,4 +1,32 @@
-*.geojson
+# ============ DATA & HEAVY ARTIFACTS — never track (live on GWS/CEDA) ============
+artifacts/
+covariate_data/
+Data/
+legacy/
+data_products/
+envs/
+
+# big binaries anywhere
+*.npz
+*.npy
+*.joblib
+*.pkl
+*.pt
 *.pth
+*.tif
+*.tiff
 *.gpkg
+*.geojson
+*.parquet
+*.nc
+*.zip
+*.png
+*.jpg
+*.jpeg
+
+# caches / os junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
 .DS_Store
+._*
